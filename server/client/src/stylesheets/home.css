@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Fondamento&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.urlContainer{
+    width:40%;
+    margin:120px auto;
+    display:flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.urlContainer h1{
+    margin:30px;
+    font-weight: 500;
+    font-family: "Fondamento", cursive;
+    text-align: center;
+    font-size: 2.5rem;
+    color:#185413;
+}
+
+.urlContainer input{
+    width:100%;
+    padding:7px;
+    font-size: 1rem;
+    border:none;
+    outline:none;
+    -webkit-box-shadow: 0px 0px 7px -1px rgba(24,84,19,0.72);
+    -moz-box-shadow: 0px 0px 7px -1px rgba(24,84,19,0.72);
+    box-shadow: 0px 0px 7px -1px rgba(24,84,19,0.72);
+}
+
+.buttons{
+    display:flex;
+    flex-direction: row;
+    margin:20px;
+}
+
+.cancelButton,.createButton{
+    margin:0px 10px;
+    width:100px;
+    padding:7px;
+    font-size: 1rem;
+    background-color:#185413;
+    color:white;
+}
+
+.shortUrl{
+    width:100%;
+    margin-top: 20px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.shortUrl span{
+    flex:8;
+    text-align: center;
+    word-wrap: break-word;
+    -webkit-box-shadow: 0px 0px 7px -1px rgba(24,84,19,0.72);
+    -moz-box-shadow: 0px 0px 7px -1px rgba(24,84,19,0.72);
+    box-shadow: 0px 0px 7px -1px rgba(24,84,19,0.72);
+    padding:6px;
+}
+.copyButton{
+    flex:1;
+    padding:6px;
+    font-size: 1rem;
+    background-color:#185413;
+    color:white;
+}
+
+@media(max-width:1220px){
+    .urlContainer{
+        width:50%;
+    }
+    .urlContainer h1{
+        font-size:2rem;
+    }
+    .urlContainer input{
+        padding:10px 5px;
+    }
+    .shortUrl span{
+        padding:10px 5px;
+    }
+    .copyButton{
+        padding: 8px 5px;
+    }
+   
+}
+
+@media(max-width:767px){
+    .urlContainer{
+        width:80%;
+    }
+    .urlContainer h1{
+        font-size:1.8rem;
+    }
+    .urlContainer input{
+        font-size: 1rem;
+        padding:10px 5px;
+    }
+    .shortUrl span{
+        padding:10px 5px;
+        font-size: 1rem;
+    }
+    .copyButton{
+        padding: 10px 5px;
+    }
+}
+
+@media(max-width:442px){
+    .urlContainer{
+        width:90%;
+    }
+    .urlContainer h1{
+        font-size:1.5rem;
+    }
+    .urlContainer input{
+        font-size: 0.8rem;
+        padding:10px 2px;
+    }
+    .shortUrl span{
+        font-size: 0.8rem;
+        padding:10px 2px;
+
+    }
+    .cancelButton,.createButton{
+        width:80px;
+        padding:5px;
+    }
+    .copyButton{
+        padding: 10px 5px;
+    }
+}

@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Fondamento&display=swap");
+
+.navContainer{
+    margin-top: 0px;
+    width:100%;
+    padding:15px;
+    display:flex;
+    flex-direction:row;
+    background-color: rgb(4, 39, 27);
+    color:white;
+    justify-content:space-around;
+    align-items: center;
+    position: sticky;
+}
+
+.brand a{
+    text-decoration: none;
+    color:white;
+    font-size: 2rem;
+    font-family: "Fondamento", cursive;
+}
+
+.navs{
+    display:flex;
+    flex-direction: row;
+}
+
+.navs div{
+    padding:0px 20px;
+}
+
+.navs div a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:white;
+}
+
