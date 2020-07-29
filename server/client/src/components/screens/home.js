@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Copy from 'copy-to-clipboard';
-import copy from 'copy-to-clipboard';
 
 const Home = () => {
     const [longUrl,setLongUrl]=useState("");
