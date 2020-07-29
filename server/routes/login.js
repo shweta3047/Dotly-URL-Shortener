@@ -24,8 +24,6 @@ router.post("/login",(req,res)=>{
                 return res.json({token,user:{_id,email},message:"Succesfully logged in!"})
             }).catch(err=>{
                 console.log(err)
-            }).catch(err=>{
-                console.log(err)
             })
         }
     }).catch(err=>{
