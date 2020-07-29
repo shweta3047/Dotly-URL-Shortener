@@ -6,7 +6,7 @@ const {JWT_SECRET}=require('../config/keys');
 module.exports=(req,res,next)=>{
     const {Authorization}=req.headers;
     if(!Authorization){
-        return res.status(401).json({error:"User must be logged in dude"});
+        return res.status(401).json({error:"User must be logged in"});
     }
     const token=Authorization.replace('Bearer ',"")
     jwt.verify(token,JWT_SECRET,(err,payload)=>{
