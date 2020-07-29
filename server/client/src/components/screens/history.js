@@ -10,7 +10,7 @@ const History = () => {
 
     useEffect(()=>{
         fetch("/history",{
-            headers:{"authorization":"Bearer "+localStorage.getItem("jwt")}
+            headers:{"Authorization":"Bearer "+localStorage.getItem("jwt")}
         }).then(res=>res.json())
         .then(data=>{
             console.log(data)
