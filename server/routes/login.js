@@ -20,8 +20,8 @@ router.post("/login",(req,res)=>{
                     return res.status(422).json({error:"Incorrect email or password!"})
                 }
                 const token=jwt.sign({_id:savedUser._id},JWT_SECRET)
-                const {_id,name}=savedUser;
-                return res.json({token,user:{_id,name},message:"Succesfully logged in!"})
+                const {_id,email}=savedUser;
+                return res.json({token,user:{_id,email},message:"Succesfully logged in!"})
             }).catch(err=>{
                 console.log(err)
             }).catch(err=>{
