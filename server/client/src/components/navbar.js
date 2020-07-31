@@ -12,7 +12,7 @@ const Navbar = () => {
             return (
                 <>
                      <div><Link to="/history"> History</Link></div>
-                     <div><Link to="/logout" onClick={()=>{
+                     <div><Link onClick={()=>{
                          localStorage.clear();
                          dispatch({type:"CLEAR"})
                          history.push("/login")
